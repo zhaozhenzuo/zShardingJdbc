@@ -89,6 +89,7 @@ public class HashRouteRuleServiceImpl implements RouteRuleService {
 				throw new IllegalArgumentException("tableSuffixLength不能为空");
 			}
 
+			
 			int modRes = routeKeyInt % tableRealNums;
 
 			return tablePrefix + StringUtil.leftPadZero(String.valueOf(modRes), tableSuffixLength);
